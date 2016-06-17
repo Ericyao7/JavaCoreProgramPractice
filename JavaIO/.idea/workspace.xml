@@ -5,6 +5,7 @@
     <ignored path="JavaIO.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FIleFinder.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/FIleFinder.java">
+      <file leaf-file-name="FileFinder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FileFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25445706">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.37277147">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -567,12 +568,12 @@
       <created>1466193119916</created>
       <option name="number" value="Default" />
       <updated>1466193119916</updated>
-      <workItem from="1466193125372" duration="1184000" />
+      <workItem from="1466193125372" duration="1538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1184000" />
+    <option name="totallyTimeSpent" value="1538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -614,10 +615,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/FIleFinder.java">
+    <entry file="file://$PROJECT_DIR$/src/FileFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25445706">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.37277147">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
