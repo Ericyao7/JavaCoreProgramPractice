@@ -36,3 +36,72 @@ public class Solution {
     
 }
 
+public List<List<Integer>> levelOrder(TreeNode root) {
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        List<List<Integer>> wrapList = new LinkedList<List<Integer>>();
+        
+        if(root == null) return wrapList;
+        
+        queue.offer(root);
+        while(!queue.isEmpty()){
+            int levelNum = queue.size();
+            List<Integer> subList = new LinkedList<Integer>();
+            for(int i=0; i<levelNum; i++) {
+                if(queue.peek().left != null) queue.offer(queue.peek().left);
+                if(queue.peek().right != null) queue.offer(queue.peek().right);
+                subList.add(queue.poll().val);
+            }
+            wrapList.add(subList);
+        }
+        return wrapList;
+    }
+
+    
+}
+
+
+/*
+    这道题跟前面一道是一样的。。
+只是存到res的结果顺序不一样罢了。
+之前那个就是循序的存
+这道题就是每得到一个行结果就存在res的0位置，这样自然就倒序了。
+ */
+public class Solution {
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+       List<List<Integer>> res = new ArrayList<List<Integer>>();  
+        if(root == null)  
+            return res;
+        
+        LinkedList<TreeNode> queue = new LinkedList<TreeNode>();  
+        queue.add(root);
+        
+        int curLevCnt = 1;  
+        int nextLevCnt = 0;  
+        
+        ArrayList<Integer> levelres = new ArrayList<Integer>();  
+       
+        while(!queue.isEmpty()){  
+            TreeNode cur = queue.poll();  
+            curLevCnt--;  
+            levelres.add(cur.val);  
+            
+            if(cur.left != null){  
+                queue.add(cur.left);  
+                nextLevCnt++;  
+            }  
+            if(cur.right != null){  
+                queue.add(cur.right);  
+                nextLevCnt++;  
+            }  
+              
+            if(curLevCnt == 0){  
+                curLevCnt = nextLevCnt;  
+                nextLevCnt = 0;  
+                res.add(0,levelres);  //insert one by one from the beginning
+                levelres = new ArrayList<Integer>();  
+            }  
+        }  
+        return res;   
+    }
+}
+
