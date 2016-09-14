@@ -13,7 +13,7 @@ The next line contains  integers separated by spaces.
 
 n  
 d1 d2 ... dn  
-Constraints 
+
  
   
 All  are distinct.
@@ -34,28 +34,28 @@ If an array can be sorted by either swapping or reversing, stick to the swap-bas
 If you cannot sort the array in either of the above ways, output no in the first line.
 
 Sample Input #1
-
 2  
 4 2  
 Sample Output #1
 
 yes  
 swap 1 2
-Sample Input #2
 
+Sample Input #2
 3
 3 1 2
+
 Sample Output #2
-
 no
-Sample Input #3
 
+Sample Input #3
 6
 1 5 4 3 2 6
-Sample Output #3
 
+Sample Output #3
 yes
 reverse 2 5
+
 Explanation 
 For #1, you can both swap(1, 2) and reverse(1, 2), but if you can sort the array using swap, output swap only. 
 For #2, it is impossible to sort by one single operation (among those permitted). 
